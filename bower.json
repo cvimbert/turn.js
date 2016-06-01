@@ -1,0 +1,17 @@
+{
+  "name": "turnjs",
+  "main": "turn.js",
+  "homepage": "https://github.com/cvimbert/turn.js",
+  "authors": [
+    "Christophe Vimbert <c.vimbert@outlook.fr>"
+  ],
+  "description": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
