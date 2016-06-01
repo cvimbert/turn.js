@@ -394,7 +394,7 @@ turnMethods = {
 
 				// Remove element from the DOM
 				if (data.pageObjs[page])
-					data.pageObjs[page].remove();
+					data.pageObjs[page].detach();
 
 			}
 
@@ -530,16 +530,16 @@ turnMethods = {
 		if (data.pages[page]) {
 			var dd = data.pages[page].data();
 			if (dd.f && dd.f.fwrapper)
-				dd.f.fwrapper.remove();
-			data.pages[page].remove();
+				dd.f.fwrapper.detach();
+			data.pages[page].detach();
 			delete data.pages[page];
 		}
 
 		if (data.pageObjs[page])
-			data.pageObjs[page].remove();
+			data.pageObjs[page].detach();
 
 		if (data.pageWrap[page]) {
-			data.pageWrap[page].remove();
+			data.pageWrap[page].detach();
 			delete data.pageWrap[page];
 		}
 
@@ -644,7 +644,7 @@ turnMethods = {
 				if (data.pageObjs[0]) {
 					this.turn('stop').
 						css({'overflow': ''});
-					data.pageObjs[0].remove();
+					data.pageObjs[0].detach();
 					delete data.pageObjs[0];
 				}
 			}
