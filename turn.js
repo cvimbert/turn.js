@@ -24,10 +24,10 @@
 
 	if (typeof define === 'function' && define.amd) {
 		define(["jquery"], function($) {
-			return factory($);
+			factory($);
 		});
 	} else {
-		root.Album = factory(root.$);
+		factory(root.$);
 	}
 
 })(function($) {
