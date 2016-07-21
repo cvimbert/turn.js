@@ -52,9 +52,9 @@
 	// bl * br
 
 		corners = {
-			backward: ['bl', 'tl'],
-			forward: ['br', 'tr'],
-			all: ['tl', 'bl', 'tr', 'br']
+			backward: ['bl'],
+			forward: ['br'],
+			all: ['bl', 'br']
 		},
 
 		displays = ['single', 'double'],
